@@ -1,0 +1,9 @@
+require.config({
+	paths:{
+		"jquery":["jquery-1.11.1.min"]
+	}
+})
+require(['jquery','a','b'],function(jq,a,b){
+	a()
+	b()
+})

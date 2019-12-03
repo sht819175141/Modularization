@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/dialog.css">
+</head>
+<body>
+	<div class="wrap">
+		<ul class="uls">
+			<li>001<button>删除</button></li>
+			<li>002<button>删除</button></li>
+			<li>003<button>删除</button></li>
+			<li>004<button>删除</button></li>
+			<li>005<button>删除</button></li>
+		</ul>
+	</div>
+	<script src="js/sea.js"></script>
+	<script>
+		seajs.config({
+			alias:{
+				"jquery":"jquery-1.8.3.min.js"
+			}
+		})
+		seajs.use(["jquery","dialog"],function(jquery,dialog){
+			dialog.createPlug();
+			$(".uls").on("click","li",function(){
+				var i=$(this).index()+1;
+				$.dialog({
+					txt:"img/"+i+".jpg"
+				})
+			})
+			
+		})
+	</script>
+</body>
+</html>

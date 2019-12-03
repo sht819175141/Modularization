@@ -1,0 +1,94 @@
+.wrap
+{
+	margin: 30px auto;	
+	width: 600px;
+	height: 600px;
+}
+.box 
+{
+	width: 500px;
+	height: 20px;
+	border: 3px solid #006;
+	float: left;
+	position: relative;
+	
+}
+.bg 
+{
+	width: 0;
+	height: 20px;
+	background: #ccc;
+}
+.move
+{
+	position: absolute;
+	left: 0;
+	top: -5px;
+	display: block;
+	height: 30px;
+	width: 5px;
+	background: red;
+	border-radius: 5px;
+	border: 1px solid #000;
+}
+.info
+{
+	float: left;
+	width: 80px;
+	height:25px;
+	margin-left: 10px;
+	font-size: 24px;
+	font-weight: 600;
+}
+.cont 
+{
+	float: left;
+	width: 40px;
+	height: 100%;
+	text-align: center;
+	line-height: 25px;
+	font-size: 24px;
+	font-weight: 600;
+}
+.big
+{
+	margin-top: 50px;
+	float: left;
+	width: 300px;
+	height: 30px;
+	background: red;
+	border: 3px solid #00f;
+	border-radius: 5px;
+	position: relative;
+
+}
+.mark
+{
+	position: absolute;
+	width: 7px;
+	height: 40px;
+	top: -5px;
+	background: #000;
+	border-radius: 5px;
+	left: 0;
+}
+.info2
+{
+	float: left;
+	margin-top: 50px;
+	width: 80px;
+	height:25px;
+	margin-left: 10px;
+	font-size: 24px;
+	font-weight: 600;
+}
+.cont2
+{
+	float: left;
+	width: 40px;
+	height: 100%;
+	text-align: center;
+	line-height: 25px;
+	font-size: 24px;
+	font-weight: 600;
+}

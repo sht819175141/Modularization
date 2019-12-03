@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div id="wrap" class="wrap"><span>音量：</span></div>
+	<div id="light" class="light"><span>亮度：</span></div>
+	<script src="js/sea.js"></script>
+	<script>
+		seajs.config({
+			alias:{
+				"jquery":"../jq/jquery-2.1.1"
+			}
+		})
+		seajs.use("main",function(main){
+			main();
+			$("#wrap").progress({
+				scale:0.3
+			})
+			$("#light").progress({
+				scale:0.9
+			})
+		})
+	</script>
+</body>
+</html>

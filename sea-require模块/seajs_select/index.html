@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div class="wrap">
+		<ul>
+			<li>
+				<b class="fl">区域：</b>
+				<div class="menu menu1 fl">
+					<span>请选择</span>
+					<select class="first" data-key='localArea'></select>
+				</div>
+				<div class="menu menu2 fl">
+					<span>请选择</span>
+					<select  class="mm"></select>
+				</div>
+			</li>
+			<li>
+				<b class="fl">品牌：</b>
+				<div class="menu menu1 fl">
+					<span>请选择</span>
+					<select class="first" data-key='ObjectType'></select>
+				</div>
+				<div class="menu menu2 fl">
+					<span>请选择</span>
+					<select class="mm"></select>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<script src="js/sea.js"></script>
+	<script>
+		/*seajs.config({
+			alias:{
+				"jquery":"../jq/jquery-2.1.1.js"
+			}
+		})*/
+		seajs.use(["main","change"]);
+	</script>	
+</body>
+</html>

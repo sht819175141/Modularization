@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="sele">
+        <select id="year"></select><select id="mon"></select>
+    </div>
+    <div class="cont" id="cont">
+        <div class="head">
+            <span>星期日</span>
+            <span>星期一</span>
+            <span>星期二</span>
+            <span>星期三</span>
+            <span>星期四</span>
+            <span>星期五</span>
+            <span>星期六</span>
+        </div>
+        <div class="menu" id="menu">
+
+        </div>
+
+    </div>
+</div>
+
+<script src="js/sea.js"></script>
+<script>
+    seajs.config({
+        alias: {
+            "jquery": "jquery-1.11.1.min"
+        }
+    })
+    seajs.use(["jquery", "day"], function (jq, da) {
+        da.rili
+        $("#menu").rili({
+            "y": "#year",
+            "m": "#mon",
+            "head": "#sele"
+        })
+    })
+</script>
+</body>
+</html>

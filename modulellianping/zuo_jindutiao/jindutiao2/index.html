@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div id="one"></div>
+	<div id="two"></div>
+	<div id="three"></div>
+	<script src="jq/jquery-2.1.1.js"></script>
+	<script src="js/yuan.js"></script>
+	<!--<script src="js/sea.js"></script>
+	<script>
+		seajs.use("js.js",function(obg){
+			obg.tab();
+		});
+	</script>-->
+	<script>
+		$("#one").auto({
+       	 	name:$("#one"),
+       		val:0.75,
+        	color:"blue"
+   	 	});
+	    $("#two").auto({
+	        name:$("#two"),
+	        val:0.0833,
+	        color:"red"
+	    });
+	    $("#three").auto({
+	        name:$("#three"),
+	        val:0.1667,
+	        color:"black"
+	    })
+	</script>
+</body>
+</html>

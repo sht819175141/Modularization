@@ -1,0 +1,14 @@
+require.config({
+	paths:{
+		"jquery":["../jq/jquery-2.1.1"]
+	}
+})
+require(["jquery","js"],function(jquery,js){
+	js();
+	$("#box").auto({
+		prev:"#prev",
+		next:"#next",
+		type:"click",
+		ind:0
+	})
+})

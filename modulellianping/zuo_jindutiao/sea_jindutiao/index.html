@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<ul>
+		<li></li>
+		<li></li>
+	</ul>
+	<script src="js/sea.js"></script>
+	<script>
+		seajs.use("main",function(main){
+			main.auto();
+			$("li").eq(0).auto({
+				"scale":0.5
+			});
+			$("li").eq(1).auto({
+				"scale":0.9
+			});	
+		})
+	</script>
+</body>
+</html>

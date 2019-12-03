@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<button id="btn">出来</button>
+	<div class='max'>
+		<div class='min'></div>
+	</div>
+	<div class='zhong'></div>
+	<script src="js/sea.js"></script>
+	<script>
+		seajs.use(["A.js","B.js"],function(A,B){
+			A.A();
+			B.B();
+		})
+	</script>
+</body>
+</html>

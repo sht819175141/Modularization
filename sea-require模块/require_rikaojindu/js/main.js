@@ -1,0 +1,16 @@
+require.config({
+	paths:{
+		"jquery":["jquery-2.1.1"]
+	}
+})
+require(["js"],function(js){
+	js();
+	$("li").eq(0).play({
+		"scale":0.5,
+		"color":"blue"
+	})
+	$("li").eq(1).play({
+		"scale":0.7,
+		"color":"yellow"
+	})
+})
